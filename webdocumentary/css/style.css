@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    font: 400 16px/1.8 "Karla", sans-serif;
+    color: #777;
+    background-color: black;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+    position: relative;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.bgimg-1 {
+    background-image: url("../img/one.jpg");
+    min-height: 800px;
+}
+
+.bgimg-2 {
+    background-image: url("../img/two.jpg");
+    min-height: 800px;
+}
+
+.bgimg-3 {
+    background-image: url("../img/three.jpg");
+    min-height: 800px;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.logo {
+    position: fixed;
+    max-width: 200px;
+    max-height: 200px;
+    margin-left: 10px;
+}
+
+.interview {
+    width: 100%;
+    height: 100%;
+}
+
+.border {
+    min-height: 800px;
+    width: 100%;
+    padding: 150px 0;
+    background-color: white;
+    position: relative;
+    display: table;
+}
+
+.border .inner {
+    height: 100%;
+    width: 100%;
+    display: table-cell;
+    position: relative;
+    background-color: black;
+    padding: 0 10%;
+}
+
+.border.metal .inner {
+    padding-left: 50%;
+}
+
+.border.jazz .inner {
+    padding-right: 50%;
+    background-color: #a67c52;
+}
+
+.border.metal img {
+    position: absolute;
+    height: 90%;
+    width: auto;
+    left: 10%;
+    top: 5%;
+    z-index: 99;
+}
+
+.border.jazz img {
+    position: absolute;
+    height: 90%;
+    width: auto;
+    right: 10%;
+    top: 5%;
+    z-index: 99;
+}
+
+.border .band,
+.border .album {
+    padding: 0 10%;
+}
+
+.band,
+.album {
+    clear: both;
+}
+
+.album p,
+.album img,
+.band p,
+.band img {
+    float: left;
+    box-sizing: border-box;
+}
+
+.band img {
+    max-width: 40%;
+}
+
+.band p {
+    max-width: 60%;
+    padding: 100px 0 100px 50px;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.album img {
+    max-width: 40%;
+    float: right;
+}
+
+.album p {
+    max-width: 60%;
+    padding: 200px 50px 200px 0;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.social {
+    max-width: 25px;
+}
+
+
+h3 {
+    font-family: "bruxregular", sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: white;
+}
+
+p {
+    /*    letter-spacing: 5px;*/
+    font-size: 2rem;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+frameborder="0"
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
